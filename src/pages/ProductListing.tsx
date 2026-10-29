@@ -2,6 +2,7 @@ import { useSearchParams } from 'react-router-dom'
 import { ArrowDownRight, Search } from 'lucide-react'
 import ProductCard from '../components/ProductCard'
 import CurrencyToggle from '../components/CurrencyToggle'
+import FloatingCatalogControls from '../components/FloatingCatalogControls'
 import productsData from '../data/products.json'
 import type { Product } from '../context/CartContext'
 
@@ -158,7 +159,9 @@ export default function ProductListing() {
             </button>
           </div>
         )}
+        <div id="catalog-end" className="scroll-mt-24" aria-hidden="true" />
       </section>
+      <FloatingCatalogControls search={search} onSearchChange={updateSearch} />
     </main>
   )
 }
