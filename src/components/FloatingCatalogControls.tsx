@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState, type PointerEvent } from 'react'
 import { ArrowDown, ArrowUp, GripVertical, Search, X } from 'lucide-react'
 
 interface FloatingCatalogControlsProps {
@@ -102,7 +102,7 @@ export default function FloatingCatalogControls({
     })
   }
 
-  function startDrag(event: React.PointerEvent<HTMLButtonElement>) {
+  function startDrag(event: PointerEvent<HTMLButtonElement>) {
     const rect = dockRef.current?.getBoundingClientRect()
     if (!rect) return
 
@@ -119,7 +119,7 @@ export default function FloatingCatalogControls({
     setIsDragging(true)
   }
 
-  function moveDrag(event: React.PointerEvent<HTMLButtonElement>) {
+  function moveDrag(event: PointerEvent<HTMLButtonElement>) {
     const drag = dragRef.current
     if (!drag || drag.pointerId !== event.pointerId) return
 
@@ -135,11 +135,14 @@ export default function FloatingCatalogControls({
     }))
   }
 
-  function finishDrag(event: React.PointerEvent<HTMLButtonElement>) {
+  function finishDrag(event: PointerEvent<HTMLButtonElement>) {
     const drag = dragRef.current
     if (!drag || drag.pointerId !== event.pointerId) return
 
-    const left = dragLeft ?? 0
+    const left = Math.min(
+      Math.max(EDGE_GAP, event.clientX - drag.offsetX),
+      Math.max(EDGE_GAP, window.innerWidth - drag.width - EDGE_GAP),
+    )
     const side: DockSide =
       left + drag.width / 2 < window.innerWidth / 2 ? 'left' : 'right'
     const top = clampTop(
