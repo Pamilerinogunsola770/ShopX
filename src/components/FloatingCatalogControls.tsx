@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState, type PointerEvent } from 'react'
+import { createPortal } from 'react-dom'
 import { ArrowDown, ArrowUp, GripVertical, Search, X } from 'lucide-react'
 
 interface FloatingCatalogControlsProps {
@@ -22,12 +23,15 @@ interface DragState {
 
 const POSITION_STORAGE_KEY = 'shop-x-catalog-dock'
 const EDGE_GAP = 8
+const TOP_SAFE_AREA = 96
 
 function clampTop(top: number, height: number) {
-  return Math.min(
-    Math.max(EDGE_GAP, top),
-    Math.max(EDGE_GAP, window.innerHeight - height - EDGE_GAP),
+  const maximumTop = Math.max(
+    EDGE_GAP,
+    window.innerHeight - height - EDGE_GAP,
   )
+  const minimumTop = Math.min(TOP_SAFE_AREA, maximumTop)
+  return Math.min(Math.max(minimumTop, top), maximumTop)
 }
 
 function readSavedPosition(): DockPosition {
@@ -56,7 +60,7 @@ function readSavedPosition(): DockPosition {
 
   return {
     side: 'right',
-    top: Math.max(EDGE_GAP, window.innerHeight - 190),
+    top: clampTop(Math.round(window.innerHeight * 0.55), 72),
   }
 }
 
@@ -64,23 +68,12 @@ export default function FloatingCatalogControls({
   search,
   onSearchChange,
 }: FloatingCatalogControlsProps) {
-  const [isVisible, setIsVisible] = useState(false)
   const [searchOpen, setSearchOpen] = useState(false)
   const [position, setPosition] = useState<DockPosition>(readSavedPosition)
   const [dragLeft, setDragLeft] = useState<number | null>(null)
   const [isDragging, setIsDragging] = useState(false)
   const dockRef = useRef<HTMLDivElement>(null)
   const dragRef = useRef<DragState | null>(null)
-
-  useEffect(() => {
-    function updateVisibility() {
-      setIsVisible(window.scrollY > 180)
-    }
-
-    updateVisibility()
-    window.addEventListener('scroll', updateVisibility, { passive: true })
-    return () => window.removeEventListener('scroll', updateVisibility)
-  }, [])
 
   useEffect(() => {
     function keepDockInBounds() {
@@ -91,9 +84,10 @@ export default function FloatingCatalogControls({
       }))
     }
 
+    keepDockInBounds()
     window.addEventListener('resize', keepDockInBounds)
     return () => window.removeEventListener('resize', keepDockInBounds)
-  }, [])
+  }, [searchOpen])
 
   function scrollTo(id: string) {
     document.getElementById(id)?.scrollIntoView({
@@ -166,8 +160,6 @@ export default function FloatingCatalogControls({
     }
   }
 
-  if (!isVisible) return null
-
   const dockStyle =
     dragLeft !== null
       ? { left: `${dragLeft}px`, right: 'auto', top: `${position.top}px` }
@@ -175,11 +167,11 @@ export default function FloatingCatalogControls({
         ? { left: `${EDGE_GAP}px`, right: 'auto', top: `${position.top}px` }
         : { right: `${EDGE_GAP}px`, left: 'auto', top: `${position.top}px` }
 
-  return (
+  return createPortal(
     <div
       ref={dockRef}
-      style={dockStyle}
-      className={`fixed z-40 flex flex-col gap-2 ${
+      style={{ ...dockStyle, zIndex: 2147483000 }}
+      className={`fixed z-[10000] flex max-w-[calc(100vw-1rem)] flex-col gap-2 ${
         position.side === 'left' && dragLeft === null
           ? 'items-start'
           : 'items-end'
@@ -219,7 +211,7 @@ export default function FloatingCatalogControls({
         </form>
       )}
       <div
-        className={`flex items-center gap-1 rounded-full border border-white/50 bg-white/90 p-1.5 shadow-glass backdrop-blur-xl dark:border-white/10 dark:bg-neutral-900/90 sm:gap-1.5 ${
+        className={`flex items-center gap-0.5 rounded-full border border-white/70 bg-white/95 p-1 shadow-[0_12px_40px_rgba(17,17,17,0.24)] backdrop-blur-xl dark:border-white/20 dark:bg-neutral-900/95 sm:gap-1.5 sm:p-1.5 ${
           isDragging ? 'shadow-xl ring-2 ring-orange-400/40' : ''
         }`}
       >
@@ -231,7 +223,7 @@ export default function FloatingCatalogControls({
           onPointerCancel={finishDrag}
           aria-label="Drag controls to either screen edge"
           title="Drag to either screen edge"
-          className="grid size-10 shrink-0 touch-none cursor-grab place-items-center rounded-full text-neutral-400 transition hover:bg-neutral-100 hover:text-orange-600 active:cursor-grabbing dark:hover:bg-white/10"
+          className="grid size-9 shrink-0 touch-none cursor-grab place-items-center rounded-full text-neutral-500 transition hover:bg-neutral-100 hover:text-orange-600 active:cursor-grabbing dark:hover:bg-white/10 sm:size-10"
         >
           <GripVertical size={18} aria-hidden="true" />
         </button>
@@ -241,7 +233,7 @@ export default function FloatingCatalogControls({
           onClick={() => setSearchOpen((open) => !open)}
           aria-label={searchOpen ? 'Close quick search' : 'Open quick search'}
           aria-expanded={searchOpen}
-          className={`grid size-11 shrink-0 place-items-center rounded-full transition sm:size-10 ${
+          className={`grid size-10 shrink-0 place-items-center rounded-full transition sm:size-11 ${
             searchOpen
               ? 'bg-orange-500 text-white'
               : 'text-neutral-700 hover:bg-orange-50 hover:text-orange-600 dark:text-neutral-200 dark:hover:bg-white/10'
@@ -254,7 +246,7 @@ export default function FloatingCatalogControls({
           onClick={() => scrollTo('collection')}
           aria-label="Go to the beginning of the products"
           title="Beginning of products"
-          className="grid size-11 shrink-0 place-items-center rounded-full text-neutral-700 transition hover:bg-orange-50 hover:text-orange-600 dark:text-neutral-200 dark:hover:bg-white/10 sm:size-10"
+          className="grid size-10 shrink-0 place-items-center rounded-full text-neutral-700 transition hover:bg-orange-50 hover:text-orange-600 dark:text-neutral-200 dark:hover:bg-white/10 sm:size-11"
         >
           <ArrowUp size={19} aria-hidden="true" />
         </button>
@@ -263,11 +255,12 @@ export default function FloatingCatalogControls({
           onClick={() => scrollTo('catalog-end')}
           aria-label="Go to the end of the products"
           title="End of products"
-          className="grid size-11 shrink-0 place-items-center rounded-full bg-gradient-to-br from-orange-500 to-red-500 text-white shadow-md shadow-orange-500/20 transition hover:from-orange-600 hover:to-red-600 sm:size-10"
+          className="grid size-10 shrink-0 place-items-center rounded-full bg-gradient-to-br from-orange-500 to-red-500 text-white shadow-md shadow-orange-500/20 transition hover:from-orange-600 hover:to-red-600 sm:size-11"
         >
           <ArrowDown size={19} aria-hidden="true" />
         </button>
       </div>
-    </div>
+    </div>,
+    document.body,
   )
 }

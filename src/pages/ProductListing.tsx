@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { ArrowDownRight, Search } from 'lucide-react'
 import ProductCard from '../components/ProductCard'
@@ -15,6 +16,21 @@ export default function ProductListing() {
   const [searchParams, setSearchParams] = useSearchParams()
   const search = searchParams.get('search') ?? ''
   const activeCategory = searchParams.get('category') ?? 'All'
+
+  useEffect(() => {
+    const frame = window.requestAnimationFrame(() => {
+      const collection = document.getElementById('collection')
+      if (!collection) return
+
+      document.documentElement.style.scrollBehavior = 'auto'
+      collection.scrollIntoView({ behavior: 'auto', block: 'start' })
+      window.requestAnimationFrame(() => {
+        document.documentElement.style.removeProperty('scroll-behavior')
+      })
+    })
+
+    return () => window.cancelAnimationFrame(frame)
+  }, [])
 
   function updateSearch(value: string) {
     setSearchParams(
