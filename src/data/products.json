@@ -318,5 +318,149 @@
     "category": "Accessories",
     "image": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=1200&q=85",
     "description": "A polished automatic wristwatch with a stainless-steel case, clear dial, and a timeless design for daily wear."
+  },
+  {
+    "id": "monitor-01",
+    "name": "27-Inch 4K Monitor",
+    "price": 549,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=1200&q=85",
+    "description": "A crisp 4K display with a slim profile and adjustable stand for focused work and entertainment."
+  },
+  {
+    "id": "gaming-controller-01",
+    "name": "Wireless Game Controller",
+    "price": 69,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1592840496694-26d035b52b48?auto=format&fit=crop&w=1200&q=85",
+    "description": "A responsive wireless controller with an ergonomic grip and familiar button layout for long sessions."
+  },
+  {
+    "id": "power-bank-01",
+    "name": "Compact 20K Power Bank",
+    "price": 58,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?auto=format&fit=crop&w=1200&q=85",
+    "description": "A portable high-capacity power bank with fast charging to keep phones and small devices ready to go."
+  },
+  {
+    "id": "card-holder-01",
+    "name": "Compact Leather Card Holder",
+    "price": 24,
+    "category": "Accessories",
+    "image": "https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=1200&q=85",
+    "description": "A slim card holder with a compact profile and quick-access slots for everyday essentials."
+  },
+  {
+    "id": "tote-01",
+    "name": "Canvas Market Tote",
+    "price": 28,
+    "category": "Accessories",
+    "image": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=1200&q=85",
+    "description": "A sturdy reusable canvas tote with comfortable shoulder straps and room for daily errands."
+  },
+  {
+    "id": "hair-clip-01",
+    "name": "Everyday Claw Clip Set",
+    "price": 12,
+    "category": "Accessories",
+    "image": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1200&q=85",
+    "description": "A set of durable, easy-to-style hair clips in neutral tones for a secure everyday hold."
+  },
+  {
+    "id": "polo-01",
+    "name": "Textured Cotton Polo",
+    "price": 48,
+    "category": "Apparel",
+    "image": "https://images.unsplash.com/photo-1625910513413-5fc45e1d0749?auto=format&fit=crop&w=1200&q=85",
+    "description": "A breathable cotton polo with a subtle texture and a versatile fit for casual or smart-casual wear."
+  },
+  {
+    "id": "chinos-01",
+    "name": "Relaxed Tapered Chinos",
+    "price": 58,
+    "category": "Apparel",
+    "image": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=1200&q=85",
+    "description": "Comfortable tapered chinos in durable cotton twill, easy to dress up or wear casually."
+  },
+  {
+    "id": "cardigan-01",
+    "name": "Everyday Knit Cardigan",
+    "price": 68,
+    "category": "Apparel",
+    "image": "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=1200&q=85",
+    "description": "A soft midweight cardigan with a clean button front for layering through changing seasons."
+  },
+  {
+    "id": "side-table-01",
+    "name": "Round Oak Side Table",
+    "price": 118,
+    "category": "Home & Living",
+    "image": "https://images.unsplash.com/photo-1499933374294-4584851497cc?auto=format&fit=crop&w=1200&q=85",
+    "description": "A compact oak side table with a warm finish and a simple shape for living rooms or bedside use."
+  },
+  {
+    "id": "cushion-01",
+    "name": "Linen Blend Cushion Cover",
+    "price": 52,
+    "category": "Home & Living",
+    "image": "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=1200&q=85",
+    "description": "A textured linen-blend cushion cover that adds a soft, considered accent to a chair or sofa."
+  },
+  {
+    "id": "dinnerware-01",
+    "name": "Stoneware Dinner Plate Set",
+    "price": 76,
+    "category": "Home & Living",
+    "image": "https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?auto=format&fit=crop&w=1200&q=85",
+    "description": "A set of durable stoneware plates with a subtle glaze, made for everyday meals and relaxed hosting."
+  },
+  {
+    "id": "resistance-bands-01",
+    "name": "Resistance Band Set",
+    "price": 32,
+    "category": "Sports & Outdoors",
+    "image": "https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?auto=format&fit=crop&w=1200&q=85",
+    "description": "A versatile set of resistance bands for warm-ups, strength sessions, and travel-friendly workouts."
+  },
+  {
+    "id": "camping-light-01",
+    "name": "Rechargeable Camping Lantern",
+    "price": 48,
+    "category": "Sports & Outdoors",
+    "image": "https://images.unsplash.com/photo-1504851149312-7a075b496cc7?auto=format&fit=crop&w=1200&q=85",
+    "description": "A compact rechargeable lantern that provides dependable light for campsites and outdoor evenings."
+  },
+  {
+    "id": "running-belt-01",
+    "name": "Lightweight Running Belt",
+    "price": 26,
+    "category": "Sports & Outdoors",
+    "image": "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=1200&q=85",
+    "description": "A low-profile running belt with secure storage for keys and a phone during outdoor training."
+  },
+  {
+    "id": "sunscreen-01",
+    "name": "Daily Mineral Sunscreen",
+    "price": 32,
+    "category": "Beauty & Care",
+    "image": "https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=1200&q=85",
+    "description": "A lightweight mineral sunscreen for daily wear that layers comfortably into a simple skincare routine."
+  },
+  {
+    "id": "body-lotion-01",
+    "name": "Nourishing Body Lotion",
+    "price": 34,
+    "category": "Beauty & Care",
+    "image": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=1200&q=85",
+    "description": "A daily body lotion with a smooth, quick-absorbing texture for comfortable everyday hydration."
+  },
+  {
+    "id": "cleansing-balm-01",
+    "name": "Gentle Cleansing Balm",
+    "price": 42,
+    "category": "Beauty & Care",
+    "image": "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=1200&q=85",
+    "description": "A gentle cleansing balm that melts away daily buildup and leaves skin feeling soft and clean."
   }
 ]
