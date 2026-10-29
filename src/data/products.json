@@ -2,7 +2,7 @@
   {
     "id": "headphones-01",
     "name": "Studio Wireless Headphones",
-    "price": 249,
+    "price": 50,
     "category": "Electronics",
     "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&q=85",
     "description": "Immersive over-ear sound, refined noise cancellation, and a comfortable fit for all-day listening."
@@ -10,7 +10,7 @@
   {
     "id": "watch-01",
     "name": "Minimal Steel Watch",
-    "price": 189,
+    "price": 45,
     "category": "Accessories",
     "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&q=85",
     "description": "A clean stainless-steel timepiece with a precise movement and an understated everyday profile."
@@ -18,7 +18,7 @@
   {
     "id": "sneakers-01",
     "name": "Everyday Runner",
-    "price": 128,
+    "price": 60,
     "category": "Apparel",
     "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&q=85",
     "description": "Lightweight cushioning and a durable profile make this versatile sneaker ready for daily wear."
@@ -26,7 +26,7 @@
   {
     "id": "camera-01",
     "name": "Pocket Digital Camera",
-    "price": 579,
+    "price": 699,
     "category": "Electronics",
     "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&q=85",
     "description": "A compact camera with crisp image quality and intuitive controls for capturing everyday moments."
@@ -34,7 +34,7 @@
   {
     "id": "bag-01",
     "name": "Structured Crossbody",
-    "price": 96,
+    "price": 32,
     "category": "Accessories",
     "image": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&q=85",
     "description": "A streamlined crossbody bag with considered storage, a durable finish, and an adjustable strap."
@@ -42,7 +42,7 @@
   {
     "id": "jacket-01",
     "name": "Utility Overshirt",
-    "price": 142,
+    "price": 62,
     "category": "Apparel",
     "image": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=1200&q=85",
     "description": "A versatile cotton layer with a relaxed shape and functional pockets for changing seasons."
@@ -50,7 +50,7 @@
   {
     "id": "speaker-01",
     "name": "Portable Bluetooth Speaker",
-    "price": 119,
+    "price": 82,
     "category": "Electronics",
     "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=1200&q=85",
     "description": "Detailed sound in a compact, travel-ready design with simple wireless pairing."
@@ -58,7 +58,7 @@
   {
     "id": "sunglasses-01",
     "name": "Contour Sunglasses",
-    "price": 78,
+    "price": 8,
     "category": "Accessories",
     "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=1200&q=85",
     "description": "Lightweight frames with UV-protective lenses and a timeless shape built for everyday use."
@@ -82,7 +82,7 @@
   {
     "id": "keyboard-01",
     "name": "Mechanical Desk Keyboard",
-    "price": 139,
+    "price": 105,
     "category": "Electronics",
     "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=1200&q=85",
     "description": "A compact mechanical keyboard with tactile keys and a clean layout for a considered desk setup."
@@ -90,7 +90,7 @@
   {
     "id": "mouse-01",
     "name": "Wireless Precision Mouse",
-    "price": 69,
+    "price": 48,
     "category": "Electronics",
     "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=1200&q=85",
     "description": "A comfortable wireless mouse with responsive tracking and a simple rechargeable design."
@@ -98,7 +98,7 @@
   {
     "id": "earbuds-01",
     "name": "True Wireless Earbuds",
-    "price": 159,
+    "price": 19,
     "category": "Electronics",
     "image": "https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=1200&q=85",
     "description": "Pocket-sized wireless earbuds with balanced sound, a secure fit, and a compact charging case."
@@ -122,7 +122,7 @@
   {
     "id": "backpack-01",
     "name": "Commuter Daypack",
-    "price": 118,
+    "price": 20,
     "category": "Accessories",
     "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1200&q=85",
     "description": "A durable everyday backpack with a padded laptop sleeve and thoughtfully organized compartments."
@@ -130,7 +130,7 @@
   {
     "id": "wallet-01",
     "name": "Slim Leather Wallet",
-    "price": 64,
+    "price": 15,
     "category": "Accessories",
     "image": "https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=1200&q=85",
     "description": "A slim leather wallet with neat card storage and a profile that slips easily into a pocket."
@@ -138,7 +138,7 @@
   {
     "id": "belt-01",
     "name": "Classic Leather Belt",
-    "price": 58,
+    "price": 12,
     "category": "Accessories",
     "image": "https://images.unsplash.com/photo-1624222247344-550fb8cb2c10?auto=format&fit=crop&w=1200&q=85",
     "description": "A versatile leather belt finished with a brushed metal buckle and designed for everyday wear."
@@ -146,7 +146,7 @@
   {
     "id": "scarf-01",
     "name": "Soft Woven Scarf",
-    "price": 52,
+    "price": 22,
     "category": "Accessories",
     "image": "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=1200&q=85",
     "description": "A soft woven scarf with a lightweight feel that adds a practical layer through cooler days."
@@ -170,7 +170,7 @@
   {
     "id": "shirt-01",
     "name": "Relaxed Linen Shirt",
-    "price": 88,
+    "price": 32,
     "category": "Apparel",
     "image": "https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=1200&q=85",
     "description": "A breathable linen-blend shirt with a relaxed cut that works layered or worn on its own."
@@ -178,7 +178,7 @@
   {
     "id": "denim-01",
     "name": "Straight-Leg Denim",
-    "price": 104,
+    "price": 38,
     "category": "Apparel",
     "image": "https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=1200&q=85",
     "description": "Classic straight-leg denim made from sturdy cotton with a comfortable fit for everyday rotation."
@@ -186,7 +186,7 @@
   {
     "id": "sweater-01",
     "name": "Ribbed Knit Sweater",
-    "price": 112,
+    "price": 33,
     "category": "Apparel",
     "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=1200&q=85",
     "description": "A soft ribbed knit sweater with a clean crew neckline and an easy shape for layering."
@@ -194,7 +194,7 @@
   {
     "id": "coat-01",
     "name": "Modern Wool Coat",
-    "price": 285,
+    "price": 50,
     "category": "Apparel",
     "image": "https://images.unsplash.com/photo-1539533018447-63fcce2678e3?auto=format&fit=crop&w=1200&q=85",
     "description": "A tailored wool-blend coat with a clean silhouette and considered details for cooler weather."
@@ -202,7 +202,7 @@
   {
     "id": "dress-01",
     "name": "Everyday Midi Dress",
-    "price": 126,
+    "price": 79,
     "category": "Apparel",
     "image": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=1200&q=85",
     "description": "An easy midi dress with a flattering drape that transitions comfortably from day to evening."
@@ -210,7 +210,7 @@
   {
     "id": "boots-01",
     "name": "Leather Chelsea Boots",
-    "price": 198,
+    "price": 72,
     "category": "Apparel",
     "image": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=1200&q=85",
     "description": "A versatile leather ankle boot with elastic side panels and a supportive low-profile sole."
@@ -218,7 +218,7 @@
   {
     "id": "chair-01",
     "name": "Arc Lounge Chair",
-    "price": 489,
+    "price": 150,
     "category": "Home & Living",
     "image": "https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=1200&q=85",
     "description": "A sculptural lounge chair with a supportive seat and a warm finish for quiet corners at home."
@@ -226,7 +226,7 @@
   {
     "id": "lamp-01",
     "name": "Soft Glow Table Lamp",
-    "price": 126,
+    "price": 102,
     "category": "Home & Living",
     "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=1200&q=85",
     "description": "A compact table lamp that adds warm, diffused light to a bedside table or reading nook."
@@ -242,7 +242,7 @@
   {
     "id": "throw-01",
     "name": "Textured Cotton Throw",
-    "price": 84,
+    "price": 48,
     "category": "Home & Living",
     "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85",
     "description": "A woven cotton throw with a tactile finish that brings an extra layer of comfort to a sofa or bed."
@@ -250,7 +250,7 @@
   {
     "id": "bottle-01",
     "name": "Insulated Steel Bottle",
-    "price": 38,
+    "price": 24,
     "category": "Sports & Outdoors",
     "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=1200&q=85",
     "description": "A reusable insulated bottle with a leak-resistant lid to keep drinks close at work or outdoors."
@@ -274,7 +274,7 @@
   {
     "id": "skincare-01",
     "name": "Daily Face Care Set",
-    "price": 68,
+    "price": 30,
     "category": "Beauty & Care",
     "image": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=1200&q=85",
     "description": "A simple daily care set with gentle essentials for a consistent morning and evening routine."
@@ -282,7 +282,7 @@
   {
     "id": "scent-01",
     "name": "Cedar and Citrus Eau de Parfum",
-    "price": 98,
+    "price": 49,
     "category": "Beauty & Care",
     "image": "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=1200&q=85",
     "description": "A balanced fragrance combining bright citrus notes with a warm, understated cedar finish."
@@ -290,7 +290,7 @@
   {
     "id": "grooming-01",
     "name": "Essential Grooming Kit",
-    "price": 56,
+    "price": 36,
     "category": "Beauty & Care",
     "image": "https://images.unsplash.com/photo-1621607512214-68297480165e?auto=format&fit=crop&w=1200&q=85",
     "description": "A practical grooming kit with everyday tools arranged in a compact case for home or travel."
@@ -298,7 +298,7 @@
   {
     "id": "suit-01",
     "name": "Modern Tailored Suit",
-    "price": 425,
+    "price": 52,
     "category": "Apparel",
     "image": "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?auto=format&fit=crop&w=1200&q=85",
     "description": "A contemporary two-piece suit with a clean tailored fit, versatile enough for formal events and important workdays."
@@ -306,7 +306,7 @@
   {
     "id": "hoodie-01",
     "name": "Heavyweight Everyday Hoodie",
-    "price": 92,
+    "price": 38,
     "category": "Apparel",
     "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=1200&q=85",
     "description": "A substantial cotton-blend hoodie with a brushed interior, relaxed shape, and durable everyday construction."
@@ -314,7 +314,7 @@
   {
     "id": "wristwatch-01",
     "name": "Heritage Automatic Wristwatch",
-    "price": 385,
+    "price": 45,
     "category": "Accessories",
     "image": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=1200&q=85",
     "description": "A polished automatic wristwatch with a stainless-steel case, clear dial, and a timeless design for daily wear."
