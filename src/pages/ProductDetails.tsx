@@ -20,9 +20,10 @@ export default function ProductDetails() {
   const { addToCart } = useCart()
 
   if (!product) return <Navigate to="/shop" replace />
+  const selectedProduct = product
 
   function addProduct() {
-    addToCart(product, quantity)
+    addToCart(selectedProduct, quantity)
     setAdded(true)
   }
 

@@ -140,17 +140,12 @@ export default function ShoppingCart() {
             <p className="mt-4 text-xs leading-5 text-neutral-500 dark:text-neutral-400">
               Shipping and taxes are calculated at checkout.
             </p>
-            <button
-              type="button"
-              disabled
-              className="mt-6 w-full cursor-not-allowed rounded-full bg-neutral-300 px-5 py-3.5 text-sm font-bold text-neutral-500 dark:bg-neutral-700 dark:text-neutral-300"
-              aria-describedby="checkout-note"
+            <Link
+              to="/checkout"
+              className="mt-6 block w-full rounded-full bg-gradient-to-r from-orange-500 to-red-500 px-5 py-3.5 text-center text-sm font-bold text-white shadow-lg shadow-orange-500/20 transition hover:from-orange-600 hover:to-red-600"
             >
-              Checkout coming next
-            </button>
-            <p id="checkout-note" className="mt-3 text-center text-xs text-neutral-500 dark:text-neutral-400">
-              Checkout will be added in a later step.
-            </p>
+              Proceed to Checkout
+            </Link>
           </aside>
         </div>
       )}

@@ -1,4 +1,4 @@
-import { Link, useSearchParams } from 'react-router-dom'
+import { useSearchParams } from 'react-router-dom'
 import { ArrowDownRight, Search } from 'lucide-react'
 import ProductCard from '../components/ProductCard'
 import productsData from '../data/products.json'
@@ -155,9 +155,6 @@ export default function ProductListing() {
           </div>
         )}
       </section>
-      <p className="sr-only">
-        <Link to="/cart">View your cart</Link>
-      </p>
     </main>
   )
 }
