@@ -1,0 +1,66 @@
+[
+  {
+    "id": "headphones-01",
+    "name": "Studio Wireless Headphones",
+    "price": 249,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&q=85",
+    "description": "Immersive over-ear sound, refined noise cancellation, and a comfortable fit for all-day listening."
+  },
+  {
+    "id": "watch-01",
+    "name": "Minimal Steel Watch",
+    "price": 189,
+    "category": "Accessories",
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&q=85",
+    "description": "A clean stainless-steel timepiece with a precise movement and an understated everyday profile."
+  },
+  {
+    "id": "sneakers-01",
+    "name": "Everyday Runner",
+    "price": 128,
+    "category": "Apparel",
+    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&q=85",
+    "description": "Lightweight cushioning and a durable profile make this versatile sneaker ready for daily wear."
+  },
+  {
+    "id": "camera-01",
+    "name": "Pocket Digital Camera",
+    "price": 579,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&q=85",
+    "description": "A compact camera with crisp image quality and intuitive controls for capturing everyday moments."
+  },
+  {
+    "id": "bag-01",
+    "name": "Structured Crossbody",
+    "price": 96,
+    "category": "Accessories",
+    "image": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&q=85",
+    "description": "A streamlined crossbody bag with considered storage, a durable finish, and an adjustable strap."
+  },
+  {
+    "id": "jacket-01",
+    "name": "Utility Overshirt",
+    "price": 142,
+    "category": "Apparel",
+    "image": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=1200&q=85",
+    "description": "A versatile cotton layer with a relaxed shape and functional pockets for changing seasons."
+  },
+  {
+    "id": "speaker-01",
+    "name": "Portable Bluetooth Speaker",
+    "price": 119,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=1200&q=85",
+    "description": "Detailed sound in a compact, travel-ready design with simple wireless pairing."
+  },
+  {
+    "id": "sunglasses-01",
+    "name": "Contour Sunglasses",
+    "price": 78,
+    "category": "Accessories",
+    "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=1200&q=85",
+    "description": "Lightweight frames with UV-protective lenses and a timeless shape built for everyday use."
+  }
+]

@@ -1,75 +1,30 @@
-# React + TypeScript + Vite
+# Shop X
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive mini storefront built with React, TypeScript, Vite, Tailwind CSS,
+React Router, and Lucide icons.
 
-Currently, two official plugins are available:
+## Getting started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```sh
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+Run the production checks with `npm run build` and `npm run lint`.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Foundation files
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- `tailwind.config.js` and `postcss.config.js` configure Tailwind utilities,
+  responsive breakpoints, and backdrop-filter support.
+- `src/index.css` loads Tailwind and sets the global typography and page styles.
+- `src/data/products.json` contains the local product catalog.
+- `src/context/CartContext.tsx` provides the cart state, LocalStorage persistence,
+  and cart totals.
+- `src/components/Navbar.tsx` contains responsive navigation, catalog search,
+  category links, and the live cart count.
+- `src/App.tsx` wires the storefront and shopping-cart routes.
+- `src/pages/ShoppingCart.tsx` contains cart controls and an empty-cart state.
+- `src/main.tsx` mounts the router and cart provider.
 
-```
+The storefront reads local mock data synchronously. Product image loading uses a
+skeleton state; checkout and its form validation are intended for a later step.
