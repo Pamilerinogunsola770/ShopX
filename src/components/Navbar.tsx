@@ -29,10 +29,17 @@ export default function Navbar({ isDark, onToggleTheme }: NavbarProps) {
           className="flex shrink-0 items-center gap-2 text-xl font-black tracking-[-0.06em] text-neutral-950 dark:text-white"
           aria-label="Shop X home"
         >
-          <span className="grid size-9 place-items-center rounded-xl bg-gradient-to-br from-orange-500 to-red-500 text-white shadow-md shadow-orange-500/25">
-            X
+          <img
+            src="/shopx-logo.svg"
+            alt=""
+            className="size-10 rounded-xl shadow-md shadow-orange-500/20"
+            width="40"
+            height="40"
+          />
+          <span className="flex items-baseline gap-1">
+            <span>Shop</span>
+            <span className="text-orange-500">X</span>
           </span>
-          <span>Shop <span className="text-orange-500">X</span></span>
         </Link>
 
         <nav className="ml-auto hidden items-center gap-2 sm:flex" aria-label="Main navigation">
