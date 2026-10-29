@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
+import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import Checkout from './pages/Checkout'
 import ProductDetails from './pages/ProductDetails'
@@ -52,6 +53,7 @@ export default function App() {
         <Route path="/checkout" element={<Checkout />} />
         <Route path="*" element={<Navigate to="/shop" replace />} />
       </Routes>
+      <Footer />
     </div>
   )
 }

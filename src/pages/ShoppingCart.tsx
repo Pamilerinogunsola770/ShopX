@@ -1,17 +1,12 @@
 import { Link } from 'react-router-dom'
 import { ArrowLeft, Minus, Plus, ShoppingBag, Trash2 } from 'lucide-react'
 import { useCart } from '../context/CartContext'
-
-const formatPrice = (price: number) =>
-  new Intl.NumberFormat('en-US', {
-    style: 'currency',
-    currency: 'USD',
-    maximumFractionDigits: 0,
-  }).format(price)
+import { useCurrency } from '../context/CurrencyContext'
 
 export default function ShoppingCart() {
   const { cart, cartSubtotal, updateQuantity, removeFromCart, clearCart } =
     useCart()
+  const { formatPrice } = useCurrency()
 
   return (
     <main className="mx-auto min-h-screen max-w-7xl px-4 pb-20 pt-32 sm:px-6 lg:px-8">

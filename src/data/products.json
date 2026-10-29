@@ -294,5 +294,29 @@
     "category": "Beauty & Care",
     "image": "https://images.unsplash.com/photo-1621607512214-68297480165e?auto=format&fit=crop&w=1200&q=85",
     "description": "A practical grooming kit with everyday tools arranged in a compact case for home or travel."
+  },
+  {
+    "id": "suit-01",
+    "name": "Modern Tailored Suit",
+    "price": 425,
+    "category": "Apparel",
+    "image": "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?auto=format&fit=crop&w=1200&q=85",
+    "description": "A contemporary two-piece suit with a clean tailored fit, versatile enough for formal events and important workdays."
+  },
+  {
+    "id": "hoodie-01",
+    "name": "Heavyweight Everyday Hoodie",
+    "price": 92,
+    "category": "Apparel",
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=1200&q=85",
+    "description": "A substantial cotton-blend hoodie with a brushed interior, relaxed shape, and durable everyday construction."
+  },
+  {
+    "id": "wristwatch-01",
+    "name": "Heritage Automatic Wristwatch",
+    "price": 385,
+    "category": "Accessories",
+    "image": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=1200&q=85",
+    "description": "A polished automatic wristwatch with a stainless-steel case, clear dial, and a timeless design for daily wear."
   }
 ]

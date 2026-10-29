@@ -2,6 +2,7 @@ import { Link, NavLink } from 'react-router-dom'
 import { Menu, Moon, ShoppingCart, Sun, X } from 'lucide-react'
 import { useState } from 'react'
 import { useCart } from '../context/CartContext'
+import CurrencyToggle from './CurrencyToggle'
 
 interface NavbarProps {
   isDark: boolean
@@ -44,6 +45,9 @@ export default function Navbar({ isDark, onToggleTheme }: NavbarProps) {
         </nav>
 
         <div className="ml-auto flex shrink-0 items-center gap-2 sm:ml-3">
+          <div className="hidden md:block">
+            <CurrencyToggle compact />
+          </div>
           <button
             type="button"
             onClick={onToggleTheme}

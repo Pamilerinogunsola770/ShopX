@@ -2,15 +2,10 @@ import { useState } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { ArrowLeft, Minus, Plus, ShoppingCart } from 'lucide-react'
 import { useCart, type Product } from '../context/CartContext'
+import { useCurrency } from '../context/CurrencyContext'
 import productsData from '../data/products.json'
 
 const products: Product[] = productsData
-const formatPrice = (price: number) =>
-  new Intl.NumberFormat('en-US', {
-    style: 'currency',
-    currency: 'USD',
-    maximumFractionDigits: 0,
-  }).format(price)
 
 export default function ProductDetails() {
   const { id } = useParams()
@@ -18,6 +13,7 @@ export default function ProductDetails() {
   const [quantity, setQuantity] = useState(1)
   const [added, setAdded] = useState(false)
   const { addToCart } = useCart()
+  const { formatPrice } = useCurrency()
 
   if (!product) return <Navigate to="/shop" replace />
   const selectedProduct = product

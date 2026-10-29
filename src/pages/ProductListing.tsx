@@ -1,6 +1,7 @@
 import { useSearchParams } from 'react-router-dom'
 import { ArrowDownRight, Search } from 'lucide-react'
 import ProductCard from '../components/ProductCard'
+import CurrencyToggle from '../components/CurrencyToggle'
 import productsData from '../data/products.json'
 import type { Product } from '../context/CartContext'
 
@@ -80,7 +81,7 @@ export default function ProductListing() {
 
       <section id="collection" className="scroll-mt-28 pt-12 sm:pt-16">
         <div className="rounded-3xl border border-white/50 bg-white/60 p-4 shadow-glass backdrop-blur-md sm:p-5 dark:border-white/10 dark:bg-white/[0.06]">
-          <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+          <div className="flex flex-col gap-4 xl:flex-row xl:items-center xl:justify-between">
             <label className="flex min-h-12 items-center gap-3 rounded-2xl border border-neutral-200/80 bg-white/75 px-4 text-neutral-500 transition focus-within:border-orange-400 dark:border-white/10 dark:bg-black/20 dark:text-neutral-400">
               <Search size={18} aria-hidden="true" />
               <input
@@ -92,25 +93,28 @@ export default function ProductListing() {
                 className="w-full bg-transparent text-sm text-neutral-900 outline-none placeholder:text-neutral-500 dark:text-white"
               />
             </label>
-            <div className="flex flex-wrap gap-2" aria-label="Filter by category">
-              {categories.map((category) => {
-                const isSelected = activeCategory === category
-                return (
-                  <button
-                    type="button"
-                    key={category}
-                    onClick={() => updateCategory(category)}
-                    aria-pressed={isSelected}
-                    className={`rounded-full border px-4 py-2.5 text-sm font-semibold transition ${
-                      isSelected
-                        ? 'border-orange-500 bg-gradient-to-r from-orange-500 to-red-500 text-white shadow-md shadow-orange-500/20'
-                        : 'border-neutral-200 bg-white/60 text-neutral-600 hover:border-orange-300 hover:text-orange-700 dark:border-white/10 dark:bg-white/5 dark:text-neutral-300'
-                    }`}
-                  >
-                    {category}
-                  </button>
-                )
-              })}
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <div className="flex flex-wrap gap-2" aria-label="Filter by category">
+                {categories.map((category) => {
+                  const isSelected = activeCategory === category
+                  return (
+                    <button
+                      type="button"
+                      key={category}
+                      onClick={() => updateCategory(category)}
+                      aria-pressed={isSelected}
+                      className={`rounded-full border px-4 py-2.5 text-sm font-semibold transition ${
+                        isSelected
+                          ? 'border-orange-500 bg-gradient-to-r from-orange-500 to-red-500 text-white shadow-md shadow-orange-500/20'
+                          : 'border-neutral-200 bg-white/60 text-neutral-600 hover:border-orange-300 hover:text-orange-700 dark:border-white/10 dark:bg-white/5 dark:text-neutral-300'
+                      }`}
+                    >
+                      {category}
+                    </button>
+                  )
+                })}
+              </div>
+              <CurrencyToggle />
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@ import { useState, type FormEvent } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { ArrowLeft, Check, PackageCheck } from 'lucide-react'
 import { useCart, type CartItem } from '../context/CartContext'
+import { useCurrency } from '../context/CurrencyContext'
 
 interface CheckoutFields {
   fullName: string
@@ -24,13 +25,6 @@ const initialFields: CheckoutFields = {
   address: '',
   phone: '',
 }
-
-const formatPrice = (price: number) =>
-  new Intl.NumberFormat('en-US', {
-    style: 'currency',
-    currency: 'USD',
-    maximumFractionDigits: 0,
-  }).format(price)
 
 function validateFields(fields: CheckoutFields): CheckoutErrors {
   const errors: CheckoutErrors = {}
@@ -55,6 +49,7 @@ export default function Checkout() {
   const [errors, setErrors] = useState<CheckoutErrors>({})
   const [confirmedOrder, setConfirmedOrder] = useState<ConfirmedOrder | null>(null)
   const navigate = useNavigate()
+  const { formatPrice } = useCurrency()
 
   const summaryItems = confirmedOrder?.items ?? cart
   const summarySubtotal = confirmedOrder?.subtotal ?? cartSubtotal

@@ -2,13 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Plus } from 'lucide-react'
 import { useCart, type Product } from '../context/CartContext'
-
-const formatPrice = (price: number) =>
-  new Intl.NumberFormat('en-US', {
-    style: 'currency',
-    currency: 'USD',
-    maximumFractionDigits: 0,
-  }).format(price)
+import { useCurrency } from '../context/CurrencyContext'
 
 interface ProductCardProps {
   product: Product
@@ -18,6 +12,7 @@ export default function ProductCard({ product }: ProductCardProps) {
   const [imageLoaded, setImageLoaded] = useState(false)
   const [imageError, setImageError] = useState(false)
   const { addToCart } = useCart()
+  const { formatPrice } = useCurrency()
 
   return (
     <article className="group overflow-hidden rounded-3xl border border-white/50 bg-white/55 shadow-sm backdrop-blur-md transition duration-300 hover:-translate-y-1 hover:border-orange-200 hover:shadow-glass dark:border-white/10 dark:bg-white/[0.06] dark:hover:border-orange-400/40">
