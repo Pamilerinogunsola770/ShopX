@@ -62,5 +62,237 @@
     "category": "Accessories",
     "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=1200&q=85",
     "description": "Lightweight frames with UV-protective lenses and a timeless shape built for everyday use."
+  },
+  {
+    "id": "laptop-01",
+    "name": "Everyday Ultrabook",
+    "price": 1099,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1200&q=85",
+    "description": "A slim, capable laptop with a vivid display and dependable performance for work and travel."
+  },
+  {
+    "id": "phone-01",
+    "name": "Essential Smartphone",
+    "price": 799,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1200&q=85",
+    "description": "A refined smartphone with a bright edge-to-edge display, clear camera system, and all-day battery."
+  },
+  {
+    "id": "keyboard-01",
+    "name": "Mechanical Desk Keyboard",
+    "price": 139,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=1200&q=85",
+    "description": "A compact mechanical keyboard with tactile keys and a clean layout for a considered desk setup."
+  },
+  {
+    "id": "mouse-01",
+    "name": "Wireless Precision Mouse",
+    "price": 69,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=1200&q=85",
+    "description": "A comfortable wireless mouse with responsive tracking and a simple rechargeable design."
+  },
+  {
+    "id": "earbuds-01",
+    "name": "True Wireless Earbuds",
+    "price": 159,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=1200&q=85",
+    "description": "Pocket-sized wireless earbuds with balanced sound, a secure fit, and a compact charging case."
+  },
+  {
+    "id": "tablet-01",
+    "name": "Portable Creative Tablet",
+    "price": 449,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=1200&q=85",
+    "description": "A lightweight tablet with a crisp touchscreen, suited to reading, sketching, and everyday browsing."
+  },
+  {
+    "id": "charger-01",
+    "name": "Multi-Port Travel Charger",
+    "price": 48,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=1200&q=85",
+    "description": "A compact charging hub with multiple ports to keep your essential devices powered on the go."
+  },
+  {
+    "id": "backpack-01",
+    "name": "Commuter Daypack",
+    "price": 118,
+    "category": "Accessories",
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1200&q=85",
+    "description": "A durable everyday backpack with a padded laptop sleeve and thoughtfully organized compartments."
+  },
+  {
+    "id": "wallet-01",
+    "name": "Slim Leather Wallet",
+    "price": 64,
+    "category": "Accessories",
+    "image": "https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=1200&q=85",
+    "description": "A slim leather wallet with neat card storage and a profile that slips easily into a pocket."
+  },
+  {
+    "id": "belt-01",
+    "name": "Classic Leather Belt",
+    "price": 58,
+    "category": "Accessories",
+    "image": "https://images.unsplash.com/photo-1624222247344-550fb8cb2c10?auto=format&fit=crop&w=1200&q=85",
+    "description": "A versatile leather belt finished with a brushed metal buckle and designed for everyday wear."
+  },
+  {
+    "id": "scarf-01",
+    "name": "Soft Woven Scarf",
+    "price": 52,
+    "category": "Accessories",
+    "image": "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=1200&q=85",
+    "description": "A soft woven scarf with a lightweight feel that adds a practical layer through cooler days."
+  },
+  {
+    "id": "cap-01",
+    "name": "Cotton Baseball Cap",
+    "price": 34,
+    "category": "Accessories",
+    "image": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=1200&q=85",
+    "description": "A six-panel cotton cap with an adjustable back strap and a comfortable, everyday shape."
+  },
+  {
+    "id": "tshirt-01",
+    "name": "Heavyweight Cotton Tee",
+    "price": 42,
+    "category": "Apparel",
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1200&q=85",
+    "description": "A soft heavyweight cotton T-shirt with a relaxed fit and a durable, carefully finished neckline."
+  },
+  {
+    "id": "shirt-01",
+    "name": "Relaxed Linen Shirt",
+    "price": 88,
+    "category": "Apparel",
+    "image": "https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=1200&q=85",
+    "description": "A breathable linen-blend shirt with a relaxed cut that works layered or worn on its own."
+  },
+  {
+    "id": "denim-01",
+    "name": "Straight-Leg Denim",
+    "price": 104,
+    "category": "Apparel",
+    "image": "https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=1200&q=85",
+    "description": "Classic straight-leg denim made from sturdy cotton with a comfortable fit for everyday rotation."
+  },
+  {
+    "id": "sweater-01",
+    "name": "Ribbed Knit Sweater",
+    "price": 112,
+    "category": "Apparel",
+    "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=1200&q=85",
+    "description": "A soft ribbed knit sweater with a clean crew neckline and an easy shape for layering."
+  },
+  {
+    "id": "coat-01",
+    "name": "Modern Wool Coat",
+    "price": 285,
+    "category": "Apparel",
+    "image": "https://images.unsplash.com/photo-1539533018447-63fcce2678e3?auto=format&fit=crop&w=1200&q=85",
+    "description": "A tailored wool-blend coat with a clean silhouette and considered details for cooler weather."
+  },
+  {
+    "id": "dress-01",
+    "name": "Everyday Midi Dress",
+    "price": 126,
+    "category": "Apparel",
+    "image": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=1200&q=85",
+    "description": "An easy midi dress with a flattering drape that transitions comfortably from day to evening."
+  },
+  {
+    "id": "boots-01",
+    "name": "Leather Chelsea Boots",
+    "price": 198,
+    "category": "Apparel",
+    "image": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=1200&q=85",
+    "description": "A versatile leather ankle boot with elastic side panels and a supportive low-profile sole."
+  },
+  {
+    "id": "chair-01",
+    "name": "Arc Lounge Chair",
+    "price": 489,
+    "category": "Home & Living",
+    "image": "https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=1200&q=85",
+    "description": "A sculptural lounge chair with a supportive seat and a warm finish for quiet corners at home."
+  },
+  {
+    "id": "lamp-01",
+    "name": "Soft Glow Table Lamp",
+    "price": 126,
+    "category": "Home & Living",
+    "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=1200&q=85",
+    "description": "A compact table lamp that adds warm, diffused light to a bedside table or reading nook."
+  },
+  {
+    "id": "vase-01",
+    "name": "Hand-Finished Ceramic Vase",
+    "price": 46,
+    "category": "Home & Living",
+    "image": "https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&w=1200&q=85",
+    "description": "A minimal ceramic vase with a softly textured glaze, designed to display stems or stand alone."
+  },
+  {
+    "id": "throw-01",
+    "name": "Textured Cotton Throw",
+    "price": 84,
+    "category": "Home & Living",
+    "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85",
+    "description": "A woven cotton throw with a tactile finish that brings an extra layer of comfort to a sofa or bed."
+  },
+  {
+    "id": "bottle-01",
+    "name": "Insulated Steel Bottle",
+    "price": 38,
+    "category": "Sports & Outdoors",
+    "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=1200&q=85",
+    "description": "A reusable insulated bottle with a leak-resistant lid to keep drinks close at work or outdoors."
+  },
+  {
+    "id": "yoga-mat-01",
+    "name": "Everyday Training Mat",
+    "price": 74,
+    "category": "Sports & Outdoors",
+    "image": "https://images.unsplash.com/photo-1592432678016-e910b452f9a2?auto=format&fit=crop&w=1200&q=85",
+    "description": "A cushioned exercise mat with a stable grip surface for stretching, mobility, and home workouts."
+  },
+  {
+    "id": "duffel-01",
+    "name": "Weekend Gym Duffel",
+    "price": 92,
+    "category": "Sports & Outdoors",
+    "image": "https://images.unsplash.com/photo-1581605405669-fcdf81165afa?auto=format&fit=crop&w=1200&q=85",
+    "description": "A roomy, lightweight duffel with practical compartments for training sessions and short trips."
+  },
+  {
+    "id": "skincare-01",
+    "name": "Daily Face Care Set",
+    "price": 68,
+    "category": "Beauty & Care",
+    "image": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=1200&q=85",
+    "description": "A simple daily care set with gentle essentials for a consistent morning and evening routine."
+  },
+  {
+    "id": "scent-01",
+    "name": "Cedar and Citrus Eau de Parfum",
+    "price": 98,
+    "category": "Beauty & Care",
+    "image": "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=1200&q=85",
+    "description": "A balanced fragrance combining bright citrus notes with a warm, understated cedar finish."
+  },
+  {
+    "id": "grooming-01",
+    "name": "Essential Grooming Kit",
+    "price": 56,
+    "category": "Beauty & Care",
+    "image": "https://images.unsplash.com/photo-1621607512214-68297480165e?auto=format&fit=crop&w=1200&q=85",
+    "description": "A practical grooming kit with everyday tools arranged in a compact case for home or travel."
   }
 ]
