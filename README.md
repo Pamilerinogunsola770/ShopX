@@ -116,6 +116,10 @@ provider for production.
 npm run lint
 ```
 
+For a step-by-step explanation of the project setup, architecture, key user
+flows, and a suggested live code-change exercise, see
+[BUILD_WALKTHROUGH.md](./BUILD_WALKTHROUGH.md).
+
 ## Available npm scripts
 
 | Command | Description |
